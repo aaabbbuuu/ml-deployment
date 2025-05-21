@@ -5,18 +5,32 @@ __pycache__/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
+notebooks/.ipynb_checkpoints/
 
 # Environment
 venv/
 env/
+.venv/
 
-# Data
+# Data (general data folder, good to ignore if it contains large files)
+data/
+# Specific raw/processed data from original .gitignore
 data/raw/*
 data/processed/*
 
-# Model files
-app/models/*.h5
+# Model files (now .keras)
+app/models/*.keras
+app/models/*.h5 # Keep for old models if any, or remove if strictly .keras now
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# IDE & Configuration
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

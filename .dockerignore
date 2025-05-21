@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# IDE specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Data files (MNIST data is downloaded, but good to have)
+data/
+
+# Local test files, logs, etc.
+*.log
+*.csv
+# *.md # Keep README.md
+
+# If notebooks are not needed in the final image (they are not by default with current Dockerfile COPY)
+# notebooks/
+
+# Test files
+tests/
+pytest.ini
+.pytest_cache/
